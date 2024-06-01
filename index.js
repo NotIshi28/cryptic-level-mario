@@ -5,6 +5,7 @@ const express = require('express');
 // const passportInit = require('./utils/passportConfig.js')
 const bodyParser = require('body-parser')
 // const flash = require('express-flash')
+const cookieParser = require("cookie-parser");
 
 // const mongoose = require('mongoose');
 
@@ -14,6 +15,7 @@ const indexRouter = require('./routes/indexRouter.js')
 const app = express();
 
 app.set('view engine', 'ejs')
+app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({
     extended: true
