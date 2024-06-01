@@ -9,7 +9,7 @@ router.post('/', (req, res) => {
     let marioCounter = 0
     console.log(req.body)
     let mario = req.body.inp;
-    mario = mari0.toLowerCase();
+    mario = mario.toLowerCase();
     if (req.body.inp == 'mario') {
         marioCounter++
     }
